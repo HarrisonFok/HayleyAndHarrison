@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+<body onLoad="movePic()">
+
+<!-- Navigation Baor -->
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hhnavbar" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+			<a href="homepage.html" class="navbar-brand"><i class="fas fa-camera-retro"></i> Hayley and Harrison</a>
+		</div>
+
+<!-- 		<div class="collapse navbar-collapse" id="hhnavbar">
+			<div class="nav navbar-nav navbar-right">
+				<li><a href="#">About</a></li>
+			</div>
+		</div> -->
+	</div>
+</nav>
+
+<div id="demoPic"><img src="Images/IMG_3956.jpg" id="pic"></div>
+
+<button id="takeOut">Take Out Picture</button>
+
+<div class="container">
+	<div class="jumbotron">
+		<h1><i class="fas fa-camera-retro"></i> Image Gallery</h1>
+		<p>A bunch of pictures of my beautiful girlfriend Hayley</p>
+	</div>
+
+<!-- 	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="IMG_0542.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="IMG_0576.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="IMG_3519.jpg">
+		</div>
+	</div> -->
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3607.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3608.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3610.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3618.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3622.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3631.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3649.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3650.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3651.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3655.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3661.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3663.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3675.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3676.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3707.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3734.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3800.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3802.jpg">
+		</div>
+	</div>
+
+<!-- 	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="IMG_3803.jpg">
+		</div>
+	</div> -->
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3804.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3823.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3827.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3868.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3871.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3876.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3888.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3893.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3895.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3898.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3901.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3906.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3920.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3938.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3952.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3956.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3967.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_3979.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4036.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4048.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4058.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4059.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4139.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4146 2.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4146.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4169.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4201 2.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4201.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4214.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4215.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4216.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4217.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4218.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4222 3.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4222.png">
+		</div>
+	</div>
+
+<!-- 	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="IMG_4235 2.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="IMG_4235.png">
+		</div>
+	</div> -->
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4248.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4248 2.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4289.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4299.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4303.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4346.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4415.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4416 2.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4416.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4421.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4426 2.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4426.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4429.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4433 2.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4433.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4434.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4434.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4437.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4438 2.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4438.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4441 3.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4441.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4445 2.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4445.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4446 2.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4446.png">
+		</div>
+	</div>
+
+		<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4447 2.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4447.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4449.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4451 2.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4451.png">
+		</div>
+	</div>
+
+
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4467.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4484.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4486.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4493.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4499.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4502.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4505.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4545.jpg">
+		</div>
+	</div>
+
+<!-- 	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="IMG_4564.jpg">
+		</div>
+	</div> -->
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4566.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4567.png">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4592.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4604.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4653.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_4757.png">
+		</div>
+	</div>
+
+
+	<!-- Huge Gap of Pictures -->
+
+
+
+<!-- 
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="IMG_6112.jpg">
+		</div>
+	</div> -->
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_6318.jpg">
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="Images/IMG_7277.jpg">
+		</div>
+	</div>
+
+<!-- 	<div class="col-lg-4 col-sm-6">
+		<div class="thumbnail">
+			<img src="IMG_7321.jpg">
+		</div>
+	</div> -->
+		
+	</div>
+</div>
+
+<!-- jQuery cdn -->
+<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="gallery.js"></script>
+
+<script type="text/javascript">
+	function movePic() {
+	  var elem = document.getElementById("demoPic");
+	  var pos = 0;
+	  var id = setInterval(frame, 2);
+	  function frame() {
+	    if (pos == 850) {
+	      clearInterval(id);
+	    } else {
+	      pos++; 
+	      elem.style.left = pos + 'px'; 
+	    }
+	  }
+	}
+</script>
+
+</body>
+</html>
+
+<!-- unsplash.com -->
+<!-- font awesome -->
+<!-- Bootstrap components -->
+<!-- Google fonts -->

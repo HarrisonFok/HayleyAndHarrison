@@ -1,0 +1,21 @@
+/*h3 {
+	text-transform: uppercase;
+	padding-left: 700px;
+}
+
+p {
+	padding-left: 700px;
+}*/
+
+table, th, td {
+	border: 2px solid blue;
+}
+
+table {
+	margin-top: 200px;
+	margin-left: 600px;
+}
+
+body {
+	background: url("../Images/IMG_4592.JPG");
+}

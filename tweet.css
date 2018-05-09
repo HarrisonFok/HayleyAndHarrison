@@ -1,0 +1,30 @@
+body {
+	background: #314755;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+p {
+	font-size: 200%;
+	color: #66ff33;
+}
+
+div, form {
+	width: 1350px;
+	background: #cc2b5e;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+input {
+	font-size: 150%;
+}
+
+#tweetPage {
+	margin-left: 50px;
+	margin-top: 100px;
+}
+
+#submitDiv {
+	border: 5px solid rgb(51, 153, 255)
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO List</title>
+	<!-- <link rel="stylesheet" type="text/css" href="TODOlist.css"> -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="TODOlist.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<style type="text/css">
+		body {
+			background: #16A085;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #F4D03F, #16A085);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #F4D03F, #16A085); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		}
+
+		#TODOfrm {
+			width: 900px;
+			margin: 10px auto;
+			background: #F7F7F7;
+			border: 5px solid rgb(51, 153, 255);
+		}
+
+		input[type=text], input[type=personname] {
+		    height: 50px;
+		    width: 890px;
+		    position: relative;
+		    left: 0;
+		    outline: none;
+		    background-color: white;
+		    font-size: 16px;
+		}
+
+		h2 {
+			padding-left: 230px;
+			padding-top: 280px;
+			color: blue;
+		}
+
+		#backFromTODO {
+			margin-left: 230px;
+		}
+	</style>
+</head>
+<body>
+
+<h2>Welcome!! You can add a TODO for either one of you (Hayley Cheng) or me (Harrison Fok)</h2>
+
+<div id="TODOfrm">
+
+	<form action="TODOlist.php" method="POST">
+		<input type="personname" name="personname" placeholder="Person" />
+		<input type="text" name="newTODO" placeholder="New TODO" />
+		<input type="submit" name="addTODObtn" value="Add TODO" />
+	</form>
+
+	<form action="viewTODOs.php" method="POST">
+		<input type="submit" name="viewTODObtn" value="View TODO">
+	</form>
+
+</div>
+
+<button id="backFromTODO"><a href="../homepage.html">Back To Home</a></button>
+
+</body>
+</html>
+
+<!-- https://uigradients.com/#Moss -->
