@@ -12,6 +12,7 @@ To see the website,
 3. Type the following: localhost/your_foler_name/home.html
 4. In localhost/phpmyadmin, create a new database called "HayleyBirthdayWebsiteDatabase"
 5. Inside "HayleyBirthdayWebsiteDatabase", create a table called "users"
-Note: some stuff was done through the Udemy course taught by Colt Steele
 6. In localhost/phpmyadmin, create a new database called "todos"
 7. Inside "todos", create a table called "todoss"
+
+Note: some stuff was done through the Udemy course taught by Colt Steele
