@@ -1,6 +1,6 @@
 var pic = document.getElementById("pic");
 
-// Note: The two features below are not good
+// Note: The two features below are not good and somehow don't work when I added the special background css
 
 // pic.addEventListener("mouseover", function() {
 // 	document.body.style.background = "green";
