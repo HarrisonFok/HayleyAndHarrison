@@ -1,12 +1,14 @@
 var pic = document.getElementById("pic");
 
-pic.addEventListener("mouseover", function() {
-	document.body.style.background = "green";
-});
+// Note: The two features below are not good
 
-pic.addEventListener("mouseout", function() {
-	document.body.style.background = "lightblue";
-});
+// pic.addEventListener("mouseover", function() {
+// 	document.body.style.background = "green";
+// });
+
+// pic.addEventListener("mouseout", function() {
+// 	document.body.style.background = "lightblue";
+// });
 
 // $("button").on("click", function() {
 // 	$("div").slideToggle(1000);
