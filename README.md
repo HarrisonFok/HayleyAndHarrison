@@ -1,6 +1,4 @@
-# HayleyAndHarrison
-
-This is a website of my girlfriend and I. Because I couldn't be with her on her birthday in 2018, I created this website containing all our memories for her <3
+# MyLittleBlog
 
 REQ: XAMPP, 
 Location: XAMPP/htdocs/any_folder_name_you_want
